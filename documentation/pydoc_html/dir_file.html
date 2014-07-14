@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module dir_file</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>dir_file</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///C:/documents%20and%20settings/pogrebnyakev/%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/excel-db-0.1.4/dir_file.py">c:\documents and settings\pogrebnyakev\рабочий стол\excel-db-0.1.4\dir_file.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="global_user_settings.html">global_user_settings</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="dir_file.html#Directory">Directory</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="dir_file.html#GenericFile">GenericFile</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Directory">class <strong>Directory</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Path&nbsp;definition,&nbsp;with&nbsp;respect&nbsp;to&nbsp;user-defined&nbsp;subdirectories<br>
+Arguments:<br>
+&nbsp;&nbsp;basedir&nbsp;-&nbsp;path&nbsp;to&nbsp;main&nbsp;working&nbsp;directory&nbsp;(e.g.&nbsp;"D:/work/excel-db"),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default&nbsp;value&nbsp;is&nbsp;the&nbsp;directory&nbsp;of&nbsp;this&nbsp;.py&nbsp;file<br>
+&nbsp;&nbsp;subdir&nbsp;&nbsp;-&nbsp;subdirectory&nbsp;(e.g.&nbsp;'xls_source',&nbsp;'db3')<br>
+&nbsp;&nbsp;type&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;type&nbsp;of&nbsp;subdirectory:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'xls_source':global_user_settings.SOURCE_XLS,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'csv_output':global_user_settings.OUTPUT_CSV,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'xls_output':global_user_settings.OUTPUT_XLS,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'db3':global_user_settings.DB3,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'txt_settings':global_user_settings.(to&nbsp;be&nbsp;defined)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;path&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;full&nbsp;directory&nbsp;path&nbsp;(basedir&nbsp;+&nbsp;subdir,&nbsp;example:&nbsp;"D:/work/excel-db/db3")<br>
+Methods:<br>
+&nbsp;&nbsp;<a href="#Directory-set_path">set_path</a>(basedir,&nbsp;subdir)<br>
+&nbsp;&nbsp;<a href="#Directory-get_path">get_path</a>()<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Directory-__init__"><strong>__init__</strong></a>(self, basedir<font color="#909090">=None</font>, subdir<font color="#909090">=''</font>, dir_type<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Directory-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Directory-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Directory-get_path"><strong>get_path</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Directory-set_path"><strong>set_path</strong></a>(self, basedir<font color="#909090">=None</font>, subdir<font color="#909090">=''</font>)</dt></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="Directory-check_dir"><strong>check_dir</strong></a>(path)</dt></dl>
+
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GenericFile">class <strong>GenericFile</strong></a>(<a href="dir_file.html#Directory">Directory</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Path&nbsp;definition,&nbsp;with&nbsp;respect&nbsp;to&nbsp;user-defined&nbsp;subdirectories<br>
+Arguments:<br>
+&nbsp;filename&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;must_exist&nbsp;&nbsp;-&nbsp;True&nbsp;if&nbsp;the&nbsp;file&nbsp;must&nbsp;exist<br>
+&nbsp;obj_dir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;<a href="#Directory">Directory</a>()&nbsp;instance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;type&nbsp;of&nbsp;subdirectory,&nbsp;as&nbsp;in&nbsp;<a href="#Directory">Directory</a>&nbsp;class.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Either&nbsp;'obj_dir'&nbsp;or&nbsp;'type'&nbsp;can&nbsp;be&nbsp;supplied.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Attributes:<br>
+&nbsp;path&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;filename&nbsp;=&nbsp;base&nbsp;+&nbsp;ext&nbsp;<br>
+&nbsp;base&nbsp;&nbsp;<br>
+&nbsp;ext&nbsp;<br>
+&nbsp;fullname&nbsp;=&nbsp;os.path.lion(path,&nbsp;filename)<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;<a href="#GenericFile-set_path">set_path</a>(basedir,&nbsp;subdir)<br>
+&nbsp;<a href="#GenericFile-get_path">get_path</a>()<br>
+&nbsp;<a href="#GenericFile-get_filename">get_filename</a>()<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="dir_file.html#GenericFile">GenericFile</a></dd>
+<dd><a href="dir_file.html#Directory">Directory</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="GenericFile-__init__"><strong>__init__</strong></a>(self, filename, dir_type<font color="#909090">=None</font>, must_exist<font color="#909090">=False</font>, obj_dir<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="GenericFile-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GenericFile-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GenericFile-get_filename"><strong>get_filename</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GenericFile-set_file"><strong>set_file</strong></a>(self, filename, must_exist<font color="#909090">=False</font>)</dt></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="GenericFile-check_file"><strong>check_file</strong></a>(fn)</dt></dl>
+
+<hr>
+Methods inherited from <a href="dir_file.html#Directory">Directory</a>:<br>
+<dl><dt><a name="GenericFile-get_path"><strong>get_path</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GenericFile-set_path"><strong>set_path</strong></a>(self, basedir<font color="#909090">=None</font>, subdir<font color="#909090">=''</font>)</dt></dl>
+
+<hr>
+Static methods inherited from <a href="dir_file.html#Directory">Directory</a>:<br>
+<dl><dt><a name="GenericFile-check_dir"><strong>check_dir</strong></a>(path)</dt></dl>
+
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-nargs"><strong>nargs</strong></a>(*args)</dt></dl>
+</td></tr></table>
+</body></html>
